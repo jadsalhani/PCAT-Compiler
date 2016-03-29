@@ -1,0 +1,16 @@
+
+(* This is a very simple program to test *)
+
+@
+
+PROGRAM IS
+
+VAR test: STRING := "Hello";
+VAR i : INTEGER  := 0 ;
+
+BEGIN
+
+  (* The semi colon that should follow the statement is missing*)
+  i := 1 ;
+
+END ;

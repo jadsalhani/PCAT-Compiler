@@ -1,0 +1,21 @@
+
+(* This is a very simple program to test *)
+
+
+PROGRAM IS
+
+VAR hello: STRING := "Hello";
+VAR world: STRING := "World";
+var write: BOOLEAN := true;
+VAR i : INTEGER  := 0 ;
+
+BEGIN
+
+  (* The semi colon that should follow the statement is missing*)
+  i := 1 ;
+
+  IF write THEN
+                WRITE(hello);
+                WRITE(world);
+  END ;
+END ;

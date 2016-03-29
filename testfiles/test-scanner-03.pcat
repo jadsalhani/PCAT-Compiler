@@ -1,0 +1,47 @@
+(*This program illustrates the use of if elsif else statements *)
+
+PROGRAM IS
+
+VAR
+
+    i, j : INTEGER := 0 ;
+
+BEGIN
+
+        i := 0;
+
+        IF i = 0 THEN
+                WRITE(0);
+        ELSIF i = 1 THEN
+                WRITE(1);
+        ELSIF i = 2 THEN
+                WRITE(2);
+        ELSE WRITE (99);
+
+        END;
+
+        i := 1;
+
+        IF i = 0 THEN
+                WRITE(0);
+        ELSIF i = 1 THEN
+                WRITE(1);
+        ELSIF i = 2 THEN
+                WRITE(2);
+        ELSE WRITE (99);
+
+	END;
+
+        i := 2;
+
+        IF i = 0 THEN
+                   WRITE(0);
+        ELSIF i = 1 THEN
+                   WRITE(1);
+        ELSIF i = 2 THEN
+                   WRITE(2);
+        ELSE WRITE (99);
+
+        END ;
+
+END ;

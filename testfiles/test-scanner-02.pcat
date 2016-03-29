@@ -1,0 +1,72 @@
+
+(* This program is called the ULTIMATE TEST WHY??? *)
+
+PROGRAM IS
+VAR
+   h,z,i,x,y : INTEGER := 0 ;
+   w : ARRAY OF REAL;
+
+PROCEDURE gcd (a, b: INTEGER) : REAL IS
+   VAR x : INTEGER;
+BEGIN
+   IF(b = 0) THEN gcd := a ;
+
+   ELSE
+	BEGIN (* Here the parser should give an error *)
+ 	    x := a;
+
+  	   WHILE (x >= b) DO
+   	      BEGIN
+              x := x - b ;
+              END;
+
+	   RETURN gcd(b,x);
+        END;
+END;
+
+PROCEDURE this(why, note : REAL) IS
+BEGIN
+   IF((why = note - 1608) OR (not (note = why))) THEN
+      IF( x - y = 0)THEN
+	 DO
+         x := why / note
+         END;
+      END;
+
+PROCEDURE that() IS
+
+VAR h,z : REAL := 0.0 ;
+
+BEGIN
+   (* Question of scopes ?? *)
+   x := y;
+   this(h,z);
+END;
+
+BEGIN
+   i := 1;
+   x := 5;
+   WHILE (I <= 5) and (x <= 75) DO
+      w [i] := x;
+      x := w[i] * 20.5;
+      i := 1 + 1
+   END;
+   READ (x,y);
+   (* Another parsing error *)
+   IF x>y THEN WRITE (gcd(x, y)) ELSE WRITE (gcd (h,z));
+
+   w[gcd(x,y)] := 230000000;
+   this (w,z);
+   this (w[w[i]],gcd(x,y));
+
+   (* Missing parameters , that is considered an identifier *)
+   that;
+
+   i := 1;
+   WHILE (i <= 5) DO
+       WRITE(w[i]);
+       i := 1 + 1;
+     END;
+   WRITE(h,i,x,y,z);
+END;
+
